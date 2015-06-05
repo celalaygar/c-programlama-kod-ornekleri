@@ -24,7 +24,7 @@ int main(){
 	printf("\n");
 	for(int i=0;i<16;i++){
 		if(number&maske){
-			printf("En degersiz biti :");
+			printf("En degerli biti :");
 			printf("%d",maske);
 			break;
 		}		
