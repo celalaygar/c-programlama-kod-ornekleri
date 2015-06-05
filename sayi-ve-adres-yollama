@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void kare(int *pptr){
+	*pptr=*pptr*(*pptr);
+	printf("sayinin karesi : %d\n",*pptr);
+	printf("sayinin adresi : %p",pptr);
+}
+int main(){
+	int *ptr;
+	int a;
+	printf("sayi giriniz...");
+	scanf("%d",&a);
+	ptr=&a;
+	printf("sayi : %d\n",a);
+	printf("sayinin adresi : %p\n",ptr);
+	kare(ptr);
+}
